@@ -1,0 +1,12 @@
+var da = new Date();
+var currentTime = da.getTime();
+var dob = prompt("Enter your dob");
+var curentDate = new Date(dob);
+var totalDate = da.getTime() - curentDate.getTime();
+console.log('Time Spend in sec:',Math.floor(totalDate / (1000)));
+console.log('Time Spend in Minutes:',Math.floor(totalDate / (1000 * 60)));
+console.log('Time Spend in Hours:',Math.floor(totalDate / (1000 * 60 * 60)));
+console.log('Time Spend in Days:',Math.floor(totalDate / (1000 * 60 * 60 * 24)));
+console.log('Time Spend in Week:',Math.floor(totalDate / (1000 * 60 * 60 * 24 * 7)));
+console.log('Time Spend in Months:',Math.floor(totalDate / (1000 * 60 * 60 * 24 * 30.44)));
+console.log('Time Spend in Year:',Math.floor(totalDate / (1000 * 60 * 60 * 24 * 365.25 )));
